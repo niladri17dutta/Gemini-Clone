@@ -24,10 +24,10 @@ cd Gemini-Clone
 npm install
 ```
 
-3. **Create a `.env` file** in the root directory and add your Gemini API key:
+3. **Add your Gemini API key in `gemini.js` file** in the config directory:
 
 ```
-REACT_APP_GEMINI_API_KEY=your_api_key_here
+const API_kEY = "YOUR-API-KEY";
 ```
 
 4. **Start the development server**

@@ -33,7 +33,7 @@ const API_kEY = "YOUR-API-KEY";
 4. **Start the development server**
 
 ```bash
-npm start dev
+npm run dev
 ```
 
 The app should now be running at `http://localhost:3000`

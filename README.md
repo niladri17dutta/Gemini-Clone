@@ -24,7 +24,7 @@ cd Gemini-Clone
 npm install
 ```
 
-3. **Create a `Apikey.js` file in `config` directory and add your Gemini API key:**
+3. **Create a `apikey.js` file in `config` directory and add your Gemini API key:**
 
 ```
 const API_KEY = "YOUR-API-KEY";

@@ -24,10 +24,12 @@ cd Gemini-Clone
 npm install
 ```
 
-3. **Add your Gemini API key in `gemini.js` file** in the config directory:
+3. **Create a `Apikey.js` file in `config` directory and add your Gemini API key:**
 
 ```
-const API_kEY = "YOUR-API-KEY";
+const API_KEY = "YOUR-API-KEY";
+
+export default API_KEY;
 ```
 
 4. **Start the development server**
@@ -80,8 +82,10 @@ The app should now be running at `http://localhost:3000`
 The API requests are handled in `src/config/gemini.js`:
 
 ```javascript
-const API_kEY = "YOUR-API-KEY";
-const genAI = new GoogleGenerativeAI(API_kEY);
+import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from '@google/generative-ai';
+import API_KEY from './apikey.js';
+
+const genAI = new GoogleGenerativeAI(API_KEY);
 
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-8b" });
 
@@ -111,10 +115,6 @@ export default run;
 ## Contributing
 
 Feel free to fork this repository, open an issue, or submit a pull request if you'd like to enhance the app!
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 

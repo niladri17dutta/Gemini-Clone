@@ -182,3 +182,19 @@
     line-height: 1.8;
     text-align: justify;
 }
+
+@media (max-width:600px) {
+    .main-bottom input{
+        flex: none;
+        width: 1509px;
+    }
+    .main-bottom img{
+        width: 20px;
+    }
+    .search-box{
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap: 5px;
+    }
+}
